@@ -1,0 +1,3 @@
+admin\UserDeleteServlet.class
+admin\SelectUserByIdForUpdate.class
+admin\ToUpdateUserInfoServlet.class
