@@ -7,6 +7,7 @@
         <entry key="file://$PROJECT_DIR$/src/main/webapp/resources/admin/main.jsp" value="file://$PROJECT_DIR$/src/main/webapp/resources/admin" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/resources/admin/right.jsp" value="file://$PROJECT_DIR$/src/main/webapp/resources/admin" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/resources/admin/userlist.jsp" value="file://$PROJECT_DIR$/src/main/webapp/resources/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/resources/view/top.jsp" value="file://$PROJECT_DIR$/src/main/webapp/resources/view" />
       </map>
     </option>
   </component>

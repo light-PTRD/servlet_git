@@ -56,21 +56,23 @@ public class UserDao {
 
     }
 
-    //查询用户信息
-    public List<User> userSelect(String id){
+    //查询用户信息   currentPage 当前页数  pageSize 每页显示多少条
+    public List<User> userSelect(String id ,int currentPage,int pageSize){
         List<User> list=new ArrayList<>();
         Connection conn=DBUtil.getConn();
         String sql="";
+        try {
+        //偏移量
+        int offset=(currentPage-1)*pageSize;
 
         if (id==null||id.equals("")){
-            sql="select * from tb_user";
+            sql="select * from tb_user limit "+offset+" , "+pageSize;
 
         }else {
-            sql="select * from tb_user where id="+id;
+            sql="select * from tb_user where id="+ id +" limit "+offset+" , "+pageSize;
 
         }
 
-        try {
             PreparedStatement ps = conn.prepareStatement(sql);
 
             ResultSet r=ps.executeQuery();
@@ -150,7 +152,7 @@ public class UserDao {
     public int deleteUserById(String id){
         Connection conn=DBUtil.getConn();
         int row=0;
-        String sql="delete * from tb_user where id=?";
+        String sql="delete from tb_user where id=?";
 
         try {
             PreparedStatement ps=conn.prepareStatement(sql);
@@ -196,6 +198,33 @@ public class UserDao {
 
         return row;
     }
+
+    //获取数据库tb_user表数据条数
+    public int getDataTotal(){
+        int row=0;
+        Connection conn = DBUtil.getConn();
+        String sql="select * from tb_user";
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ResultSet r = ps.executeQuery();
+            while (r.next()){
+                row++;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return row;
+
+    }
+
+
 
 
 }

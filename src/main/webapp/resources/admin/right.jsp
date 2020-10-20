@@ -19,7 +19,7 @@
             
             <tr height="30px" bgcolor="#F0F0F0"><td style="text-indent:5px" style="border:1px solid"><font color="#004790"><b>■用户管理</b></font></td></tr>
             <tr height="1px"><td></td></tr>
-            <form action="/userSelectServlet" method="post" target="default">
+            <form action="/userSelectServlet?currentPage1=1" method="post" target="default">
             <tr>
                 <td align="center" valign="top" style="border:1px solid">
                     <table border="0" width="220px" height="80px" cellspacing="0"  style="font-size:12px">

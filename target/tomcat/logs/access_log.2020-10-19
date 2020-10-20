@@ -351,3 +351,16 @@
 0:0:0:0:0:0:0:1 - - [19/Oct/2020:16:30:42 +0800] "GET /resources/images/1.png HTTP/1.1" 200 168244 http-bio-8080-exec-8 2
 0:0:0:0:0:0:0:1 - - [19/Oct/2020:16:30:43 +0800] "POST /userSelectServlet HTTP/1.1" 200 2082 http-bio-8080-exec-8 10
 0:0:0:0:0:0:0:1 - - [19/Oct/2020:16:30:43 +0800] "GET /css/style.css HTTP/1.1" 404 977 http-bio-8080-exec-8 1
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:15 +0800] "POST /loginServlet HTTP/1.1" 200 1545 http-bio-8080-exec-2 444
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:15 +0800] "GET /resources/css/style.css%22 HTTP/1.1" 404 1003 http-bio-8080-exec-3 2
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:15 +0800] "GET /resources/admin/top.jsp HTTP/1.1" 200 890 http-bio-8080-exec-4 21
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:15 +0800] "GET /resources/admin/end.jsp HTTP/1.1" 200 489 http-bio-8080-exec-5 29
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:15 +0800] "GET /resources/admin/main.jsp HTTP/1.1" 200 889 http-bio-8080-exec-1 35
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:15 +0800] "GET /resources/admin/right.jsp HTTP/1.1" 200 6195 http-bio-8080-exec-6 172
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:15 +0800] "GET /js/My97DatePicker/WdatePicker.js HTTP/1.1" 404 1015 http-bio-8080-exec-9 1
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:15 +0800] "GET /resources/admin/default.jsp HTTP/1.1" 200 505 http-bio-8080-exec-7 27
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:16 +0800] "POST /userSelectServlet HTTP/1.1" 200 2082 http-bio-8080-exec-7 103
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:16 +0800] "GET /css/style.css HTTP/1.1" 404 977 http-bio-8080-exec-7 1
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:18 +0800] "GET /userDeleteServlet?userid=33 HTTP/1.1" 302 - http-bio-8080-exec-7 172
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:18 +0800] "GET /userSelectServlet HTTP/1.1" 200 1893 http-bio-8080-exec-1 28
+0:0:0:0:0:0:0:1 - - [19/Oct/2020:20:48:18 +0800] "GET /css/style.css HTTP/1.1" 404 977 http-bio-8080-exec-1 1

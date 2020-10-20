@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * 根据id删除用户信息
+ */
 @WebServlet(name = "UserDeleteServlet",urlPatterns = "/userDeleteServlet")
 public class UserDeleteServlet extends HttpServlet {
     @Override
@@ -20,7 +23,8 @@ public class UserDeleteServlet extends HttpServlet {
         int row=userDao.deleteUserById(id);
         if (row>0){
             //重定向
-            resp.sendRedirect("/userSelectServlet");
+            resp.sendRedirect("/userSelectServlet?currentPage1=1");
+
         }else {
             //转发
             req.getRequestDispatcher("error.jsp").forward(req,resp);
